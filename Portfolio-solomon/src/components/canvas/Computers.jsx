@@ -1,8 +1,8 @@
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
-import { Canvas, useFrame } from '@react-three/fiber';
-import React, { Suspense, useEffect, useRef, useState } from 'react';
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Canvas, useFrame } from "@react-three/fiber";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 
-import CanvasLoader from '../Loader';
+import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -17,7 +17,7 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh ref={meshRef}>
-      <hemisphereLight intensity={0.15} groundColor='black' />
+      <hemisphereLight intensity={0.15} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -61,9 +61,23 @@ const ComputersCanvas = () => {
     };
   }, []);
 
+  // If on mobile, display only the background
+  if (isMobile) {
+    return (
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          background: "linear-gradient(to right, #1f1f1f, #121212)",
+        }}
+      />
+    );
+  }
+
+  // Render the 3D scene for non-mobile devices
   return (
     <Canvas
-      frameloop='always'
+      frameloop="always"
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 40 }}
