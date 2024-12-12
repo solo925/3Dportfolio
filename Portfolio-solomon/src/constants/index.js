@@ -1,25 +1,23 @@
 import {
   backend,
-  carrent,
   css,
+  django,
   docker,
-  figma,
   git,
   html,
   javascript,
-  jobit,
   meta,
+  mind,
   mobile,
-  mongodb,
   nodejs,
+  plant,
+  py,
   reactjs,
   redux,
-  shopify,
-  starbucks,
   tailwind,
-  tesla,
+  teach,
+  tele,
   threejs,
-  tripguide,
   typescript,
   web
 } from "../assets";
@@ -94,8 +92,8 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Django",
+    icon: django,
   },
   {
     name: "Three JS",
@@ -105,13 +103,15 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
+
   {
     name: "docker",
     icon: docker,
+  },
+
+  {
+    name: "python",
+    icon: py,
   },
 
 
@@ -119,50 +119,24 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
     title: "Full stack Developer",
-    company_name: "Meta",
+    company_name: "Teach2Give",
+    icon: teach,
+    iconBg: "#383E56",
+    date: "January 2024 - December 2024",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Software Engineer",
+    company_name: "meta",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Just dreaming",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -170,6 +144,8 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+
+
 ];
 
 const testimonials = [
@@ -201,31 +177,35 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Plantcare companion app",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An app designed for plant enthusiasts that helps users care for their indoor and outdoor plants. Users can track plant health, set reminders for watering, fertilizing, and repotting, and get tips on plant care.Community Forum: A space for users to ask questions, share tips, etc.AR to visualize how a plant will look in their space before purchasing ",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "postgres",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "nodejs",
         color: "pink-text-gradient",
       },
+      {
+        name: "Typescript",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-    demo_link: "http://www.demo.com",
+    image: plant,
+    source_code_link: "https://github.com/solo925/Plant-Care-Companion-App",
+    demo_link: "https://github.com/solo925/Plant-Care-Companion-App",
   },
   {
-    name: "Job IT",
+    name: "Telehealth",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Telehealth an application that will allow for remote access to medication it provides features such as consultations,appointments between doctors and patient through video chats,booking consulrations,safe records keeping, and chatroom between a doctor and a patient and many more features , and locate available jobs based on their current location.",
     tags: [
       {
         name: "react",
@@ -236,18 +216,26 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Django",
+        color: "blue-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-    demo_link: "http://www.demo.com",
+    image: tele,
+    source_code_link: "https://github.com/solo925/Telehealth",
+    demo_link: "https://github.com/solo925/Telehealth",
   },
   {
-    name: "Trip Guide",
+    name: "Mindfuel",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "MindFuel is a habit and health tracking assistant that learns from your activities and provides personalized recommendations for healthier habits. It combines data tracking (like sleep, diet, exercise, and mental health) with actionable insights to help users improve their well-being over time. ",
     tags: [
       {
         name: "nextjs",
@@ -261,10 +249,14 @@ const projects = [
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "node js",
+        color: "blue-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-    demo_link: "http://www.demo.com",
+    image: mind,
+    source_code_link: "https://github.com/solo925/MindFuel",
+    demo_link: "https://github.com/solo925/MindFuel",
   },
 ];
 
