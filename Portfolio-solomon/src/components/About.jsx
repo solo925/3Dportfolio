@@ -54,11 +54,12 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='flex flex-wrap gap-10 mt-20'>
+      <div className='flex overflow-x-auto flex-nowrap gap-10 mt-20'>
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ServiceCard key={service.title} index={index} {...service} className="flex-1 max-w-[200px]" />
         ))}
       </div>
+
     </>
   );
 };

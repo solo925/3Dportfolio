@@ -205,7 +205,7 @@ const projects = [
   {
     name: "Telehealth",
     description:
-      "Telehealth an application that will allow for remote access to medication it provides features such as consultations,appointments between doctors and patient through video chats,booking consulrations,safe records keeping, and chatroom between a doctor and a patient and many more features , and locate available jobs based on their current location.",
+      "Telehealth an application that will allow for remote access to medication it provides features such as consultations,appointments between doctors and patient through video chats,booking consulrations,safe records keeping, and chatroom between a doctor and a patient and many more features.",
     tags: [
       {
         name: "react",

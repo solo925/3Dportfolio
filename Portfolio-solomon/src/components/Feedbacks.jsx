@@ -1,10 +1,10 @@
-import React from "react";
 import { motion } from "framer-motion";
+import React from "react";
 
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const FeedbackCard = ({
   index,
@@ -23,8 +23,8 @@ const FeedbackCard = ({
     <div className='mt-1'>
       <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
 
-      <div className='mt-7 flex justify-between items-center gap-1'>
-        <div className='flex-1 flex flex-col'>
+      <div className='flex gap-1 justify-between items-center mt-7'>
+        <div className='flex flex-col flex-1'>
           <p className='text-white font-medium text-[16px]'>
             <span className='blue-text-gradient'>@</span> {name}
           </p>
@@ -36,7 +36,7 @@ const FeedbackCard = ({
         <img
           src={image}
           alt={`feedback_by-${name}`}
-          className='w-10 h-10 rounded-full object-cover'
+          className='object-cover w-10 h-10 rounded-full'
         />
       </div>
     </div>
@@ -54,11 +54,19 @@ const Feedbacks = () => {
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
+      <div
+        className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap md:flex-nowrap gap-7 overflow-x-auto`}
+      >
         {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
+          <FeedbackCard
+            key={testimonial.name}
+            index={index}
+            {...testimonial}
+            className="flex-1 md:max-w-[300px]"
+          />
         ))}
       </div>
+
     </div>
   );
 };
