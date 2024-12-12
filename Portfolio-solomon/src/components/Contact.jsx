@@ -33,8 +33,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_xxxxxx", // Replace with your EmailJS service ID
-        "template_xxxxxx", // Replace with your EmailJS template ID
+        "service_vr8jpfp", // Replace with your EmailJS service ID
+        "template_9buk75w", // Replace with your EmailJS template ID
         {
           from_name: form.name,
           to_name: "Solomon Onyango",

@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works } from './components';
 
 const App = () => {
-  // State to track if the user is on a mobile device
+
   const [isMobile, setIsMobile] = useState(false);
 
   // Check if the device is mobile when the component mounts
