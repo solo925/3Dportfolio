@@ -1,15 +1,22 @@
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
-import { Canvas } from '@react-three/fiber';
-import React, { Suspense, useEffect, useState } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import React, { Suspense, useEffect, useRef, useState } from 'react';
 
 import CanvasLoader from '../Loader';
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
-  // const computer = useGLTF("./planet/scene.gltf");
+  const meshRef = useRef();
+
+  // Rotate the mesh continuously
+  useFrame(() => {
+    if (meshRef.current) {
+      meshRef.current.rotation.y += 0.03; // Adjust rotation speed
+    }
+  });
 
   return (
-    <mesh>
+    <mesh ref={meshRef}>
       <hemisphereLight intensity={0.15} groundColor='black' />
       <spotLight
         position={[-20, 50, 10]}
@@ -22,9 +29,9 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={isMobile ? 0.5 : 0.6} // Reduced size
+        position={isMobile ? [0, -2, -1.5] : [0, -2.5, -1]} // Adjusted for new scale
+        rotation={[-0.01, -0.2, -0.1]} // Initial rotation
       />
     </mesh>
   );
@@ -56,10 +63,10 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop='demand'
+      frameloop='always'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 3, 5], fov: 40 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
