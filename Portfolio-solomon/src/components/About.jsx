@@ -54,7 +54,8 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='flex overflow-x-auto flex-nowrap gap-10 mt-20'>
+      {/* <div className='flex overflow-x-auto flex-nowrap gap-10 mt-20'> */}
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} className="flex-1 max-w-[200px]" />
         ))}
