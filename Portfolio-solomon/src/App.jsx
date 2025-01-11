@@ -5,22 +5,22 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech,
 
 const App = () => {
 
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
-  // Check if the device is mobile when the component mounts
-  useEffect(() => {
-    const isMobileDevice = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    setIsMobile(isMobileDevice);
-  }, []);
+  // // Check if the device is mobile when the component mounts
+  // useEffect(() => {
+  //   const isMobileDevice = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  //   setIsMobile(isMobileDevice);
+  // }, []);
 
-  if (isMobile) {
-    return (
-      <div style={{ textAlign: 'center', marginTop: '50px' }}>
-        <h1>Mobile Devices Not Supported</h1>
-        <p>Sorry, this feature is not available on mobile devices for now . Please access this site from a desktop browser.</p>
-      </div>
-    );
-  }
+  // if (isMobile) {
+  //   return (
+  //     <div style={{ textAlign: 'center', marginTop: '50px' }}>
+  //       <h1>Mobile Devices Not Supported</h1>
+  //       <p>Sorry, this feature is not available on mobile devices for now . Please access this site from a desktop browser.</p>
+  //     </div>
+  //   );
+  // }
 
   return (
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
