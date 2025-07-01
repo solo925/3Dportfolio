@@ -35,9 +35,12 @@ import plant from "./plantcare.jpg";
 import py from './tech/py.png';
 import tripguide from "./tripguide.png";
 
+import aims from './company/aims.png';
+import saf from './company/saf.jpg';
+
 export {
   backend, carrent, close, creator, css, django, docker,
-  git, github, html,
+  git, github, html,aims,saf,
   javascript, jobit, logo, menu, meta, mind, mobile, mongodb,
   nodejs, plant, py, reactjs, redux, shopify,
   starbucks, tailwind, teach, tele, tesla, threejs, tripguide, typescript, web

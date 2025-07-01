@@ -6,6 +6,8 @@ import {
   git,
   html,
   javascript,
+  aims,
+  saf,
   meta,
   mind,
   mobile,
@@ -47,7 +49,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "python developer",
+    title: "Cybersecurity",
     icon: backend,
   },
 
@@ -118,32 +120,50 @@ const technologies = [
 ];
 
 const experiences = [
+
+  {
+    title: "Software Developer",
+    company_name: "Aimsoft Limited",
+    icon: aims,
+    iconBg: "#E6DEDD",
+    date: "July 2025 - Present",
+    points: [
+      "Leading development of enterprise-level solutions using React, Laravel, and Python.",
+      "Architecting and implementing scalable microservices to support high-traffic financial applications.",
+      "Optimizing application performance through advanced caching strategies and database query optimization.",
+      "Mentoring junior developers and conducting technical workshops on modern JavaScript frameworks.",
+      "Implementing CI/CD pipelines using GitHub Actions and Docker for streamlined deployment processes."
+    ],
+  },
+  
+  {
+    title: "Software Engineer",
+    company_name: "Safaricom",
+    icon: saf,
+    iconBg: "black",
+    date: "October 2024 - February 2025",
+    points: [
+      "Developed and maintained critical components for Safaricom's mobile payment ecosystem.",
+      "Collaborated with UX/UI teams to implement responsive mobile-first interfaces for customer-facing applications.",
+      "Built and maintained RESTful APIs serving over 10,000 transactions per minute with 99.9% uptime.",
+      "Utilized agile methodologies for rapid iteration and feature deployment in a high-pressure telecommunications environment.",
+      "Conducted security audits and implemented data protection measures to ensure compliance with financial regulations."
+    ],
+  },
   {
     title: "Full stack Developer",
     company_name: "Teach2Give",
     icon: teach,
     iconBg: "#383E56",
-    date: "January 2024 - December 2024",
+    date: "January 2024 - October 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and developed educational technology platforms using MERN and PERN stacks.",
+      "Created interactive learning modules and dashboards to track student progress and engagement metrics.",
+      "Implemented responsive design principles ensuring accessibility across desktop and mobile devices.",
+      "Integrated third-party APIs for video conferencing, content management, and authentication services.",
+      "Participated in pair programming sessions and code reviews to maintain high code quality standards."
     ],
-  }
-  // {
-  //   title: "Software Engineer",
-  //   company_name: "meta",
-  //   icon: meta,
-  //   iconBg: "#E6DEDD",
-  //   date: "Just dreaming",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
+  },
 
 
 ];
@@ -160,7 +180,7 @@ const testimonials = [
   {
     testimonial:
       "I've never met a web developer who truly cares about their clients' success like solo does.",
-    name: "Chris Brown",
+    name: "Denis Onyango",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
